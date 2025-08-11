@@ -1,0 +1,27 @@
+# Juego de Ta-Te-Ti
+
+Este trabajo es un juego de Ta-Te-Ti que hice para la materia. Se juega desde la consola y es para dos personas.
+
+## Carpetas
+- **src/** → acá está el código del juego.
+- **test/** → acá están las pruebas para ver si el juego anda bien.
+
+## Cómo jugar
+1. Abrir la consola en la carpeta del proyecto.
+2. Escribir:
+   python3 src/cli.py
+3. Elegir un número de fila (0, 1 o 2).
+4. Elegir un número de columna (0, 1 o 2).
+5. Gana el que ponga tres iguales seguidos ya sea de manera vertical , horinzoltal o diagonal.
+
+## Como correr los test
+Abrir la consola en la carpeta del proyecto.
+
+Escribir: PYTHONPATH=src python3 -m unittest discover -s test -p "test_*.py"
+
+## Notas
+* El tablero vacío se ve con guiones (-).
+
+* Si el lugar ya está ocupado o no existe, muestra un mensaje.
+
+* Cuando termina dice quién ganó o si es empate.
